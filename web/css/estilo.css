@@ -1,6 +1,6 @@
 /**** Sitio Web ****/
 body {  
- 
+  background-image: url(img/fondito3.png);
   font-family: arial, helvetica, sans-serif;
   margin: 0px auto;  
   padding: 0px; 
@@ -17,16 +17,16 @@ body {
 }
 
 #contenido {
-  background: white; 
-  margin: 40px 0 40px 0; 
-  border: 1px solid #999; 
-  clear: both; 
+  //background: white; 
+  margin: 60px 0 60px 0; 
+ // border: 1px solid #999; 
+ // clear: both; 
   padding: 15px 25px 25px 15px; 
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px; 
-  -webkit-box-shadow: rgba(0, 0, 0, 0.95) 1px 1px 1px; 
-  border-bottom: 1px solid #999; 
-  -webkit-border-radius:5px; 
-  -moz-border-radius: 5px;
+  //-moz-box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 1px; 
+  //-webkit-box-shadow: rgba(0, 0, 0, 0.95) 1px 1px 1px; 
+  //border-bottom: 1px solid #999; 
+ // -webkit-border-radius:5px; 
+ // -moz-border-radius: 5px;
 }
 
 #bloque-imagen {
@@ -70,7 +70,7 @@ h3 {
 .explicacion .titulo
 {
   position: absolute;
- 
+  background-image: url(img/titulo.png);
   background-repeat: no-repeat;
   display: block;
   height: 49px;
@@ -100,7 +100,7 @@ code {
   clear: both;
   width: 100%;
   height: 129px;
- 
+  background: transparent url('img/bgfoo.png') repeat-x top right;
   text-align: center;
 
 }
@@ -206,11 +206,11 @@ code {
     width:18px;
     display:block;
     cursor: pointer;
-    background: transparent url(img/controlls.gif) center bottom no-repeat;
+    background: src="img/controlls.jpg" center bottom no-repeat;
     float:left;
     outline: none;
 }
 
 .choco-controlNavigation a.active {
-  background: transparent url(img/controlls.gif) center top no-repeat;
+  background: src="img/controlls.jpg" center top no-repeat;
 }
