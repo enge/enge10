@@ -30,39 +30,30 @@
                 <img src="img/header.png" id="img"/>
             </p:layoutUnit>            
             <p:layoutUnit position="center" >
+                
                 <h:form>  
                     <p:growl id="messages"/>
                     <p:menubar >
-                        <p:menuitem value="Inicio" url="index.xhtml" target="_parent"></p:menuitem>
+                        <p:submenu label="Inicio">
+                           <p:menuitem value="Home" url="index.xhtml" />
+                        </p:submenu>                    
                         <p:submenu label="Institucional" >
-                            <p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
-                            <p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+                            <p:menuitem value="Quem Somos" url="Quem_Somos.xhtml" />
                         </p:submenu>
                         <p:submenu label="Dicas de Saude">
-                            <p:menuitem value="Contents" url="Header/Header.html" />
-                            <p:submenu label="Search" icon="ui-icon-search">
-                                <p:submenu label="Text">
-                                    <p:menuitem value="Workspace" url="#" />
-                                </p:submenu>
-                                <p:menuitem value="File" url="#" />
-                            </p:submenu>
+                        <p:menuitem value="Alimentação" url="Dicas_Alimentação.xhtml"  />
                         </p:submenu>
                         <p:submenu label="Contato">
-                            <p:submenu label="Ajax" icon="ui-icon-refresh">
-                                <p:menuitem value="Save" actionListener="#{menuView.save}" icon="ui-icon-disk" update="messages"/>
-                                <p:menuitem value="Update" actionListener="#{menuView.update}" icon="ui-icon-arrowrefresh-1-w" update="messages"/>
-                            </p:submenu>
-                            <p:submenu label="Non-Ajax" icon="ui-icon-newwin">
-                                <p:menuitem value="Delete" actionListener="#{menuView.delete}" icon="ui-icon-close" update="messages" ajax="false"/>
-                            </p:submenu>
+                        <p:menuitem value="Telefones" url="Contato_Telefone.xhtml" /> 
+                        <p:menuitem value="E_mail" url="Contato_E_mail.xhtml"  />
                         </p:submenu>
                         <p:submenu label="Produtos">
                             <p:menuitem value="Planos Individuais e familiares" url="Ameplan.html" target="_parent"></p:menuitem>
-                            <p:menuitem value="Planos Pequena e media Empresa " url="produtos.xhtml" target="_parent"></p:menuitem>
+                            <p:menuitem value="Planos Pequena e media Empresa " url="#" target="_parent"></p:menuitem>
                         </p:submenu>
-                        
                     </p:menubar>
                 </h:form>
+                    
                 <div id="area">
                     <script language="Javascript">
                         var diasdasemana = new Array

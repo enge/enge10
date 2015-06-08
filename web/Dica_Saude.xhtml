@@ -14,7 +14,7 @@
             <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css"></link>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
             <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'/>
-            <meta name="keywords" content="jquery plugin, slideshow, image slider, slider, chocolate, tasty, chocoslider, choco, alandawi"/>
+            
             
             <script language="Javascript">
                 $(window).load(function () {
@@ -30,7 +30,7 @@
                 <img src="img/header.png" id="img"/>
             </p:layoutUnit>            
             <p:layoutUnit position="center" >
-             <h:form>  
+                <h:form>  
                     <p:growl id="messages"/>
                     <p:menubar >
                         <p:submenu label="Inicio">
@@ -61,7 +61,38 @@
                         document.write(" " + diasdasemana[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de 2015");
                     </script>
                 </div>
-                                 
+                <div id="contenedor">
+                    <div id="contenido"  class="clearfix"> 
+                               
+                        <div id="slider">
+                           <a href="#"><img src="img/img_1.jpg" alt="Foto 1" title=""/></a>
+                           <a href="#"><img src="img/img_2.jpg" alt="Foto 2" title=""/></a>
+                           <a href="#"><img src="img/img_3.jpg" alt="Foto 3" title=""/></a>
+                            <a href="#"><img src="img/img_4.jpg" alt="Foto 4" title=""/></a>
+                            <a href="#"><img src="img/img_5.jpg" alt="Foto 5" title=""/></a>
+                                               
+                        </div>
+                       
+
+                        
+                     </div>
+                   
+                </div>
+                                            
+                <script language="Javascript" src="js/jquery.chocoslider.js" type="text/javascript">
+                        var _gaq = _gaq || [];
+                        _gaq.push(['_setAccount', 'UA-12965236-2']);
+                        _gaq.push(['_trackPageview']);
+                        (function () {
+                            var ga = document.createElement('script');
+                            ga.type = 'text/javascript';
+                            ga.async = true;
+                            ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(ga, s);
+                        })();
+                </script>                
+                  
             </p:layoutUnit> 
 
             <p:layoutUnit position="south" size="60">
