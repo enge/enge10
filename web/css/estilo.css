@@ -40,10 +40,15 @@
 }
 
 #teste{
-    
-    position: absolute;
-    right: 20%;
-    top: 12%;
+  position: relative; 
+  background-color: white;
+  width: 750px;
+  height: 91%;
+ //border: 1px solid #000;
+  margin: 5px auto;  
+
+  
+  
 }
 
 body {  
