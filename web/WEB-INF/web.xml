@@ -8,21 +8,34 @@
 		<welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
         <welcome-file-list>
-		<welcome-file>produtos.xhtml</welcome-file>
+		<welcome-file>produtos.xhtml</welcome-file>                
 	</welcome-file-list>
-        <context-param>
-  <param-name>javax.faces.ViewState</param-name>
-  <param-value>Development</param-value>
-</context-param> 
-	<context-param>
+        <welcome-file-list>
+		<welcome-file>produtos1.xhtml</welcome-file>
+	</welcome-file-list>
+        <welcome-file-list>
+		<welcome-file>Contato.xhtml</welcome-file>
+	</welcome-file-list>
+        <welcome-file-list>
+		<welcome-file>Quem_Somos.xhtml</welcome-file>
+	</welcome-file-list>
+        <welcome-file-list>
+		<welcome-file>Dicas_Alimentação.xhtml</welcome-file>
+	</welcome-file-list>
+        <welcome-file-list>
+		<welcome-file>Dica_Saude.xhtml</welcome-file>
+	</welcome-file-list>
+      	<context-param>
 		<param-name>javax.faces.PROJECT_STAGE</param-name>
 		<param-value>Development</param-value>
 	</context-param>
+        
 	<servlet>
 		<servlet-name>Faces Servlet</servlet-name>
 		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+        
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.jsf</url-pattern>
